@@ -1,1 +1,339 @@
 /* https://stackoverflow.com/questions/13850955/how-to-align-a-link-icon-after-the-text-via-css  pour icone lier filtre*/ 
+
+*{
+    font-family: "Raleway"; sans-serif;
+    max-width: 1400px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    
+}
+
+body {
+    box-sizing: border-box;
+}
+/*  haut de page */
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: inherit;
+}
+
+header img{
+object-fit: contain;
+    
+    
+}
+
+header {
+
+display: flex;
+justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+header ul{
+
+    display:flex;
+    margin: auto;
+    list-style: none;
+    font-weight: 500;
+    text-align: center;
+    
+    
+    
+    
+}
+.bouton:hover {
+
+    color : #0065FC;
+    border-top: solid;
+}
+
+.menu-nav {
+
+    display:flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.bouton {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+/*   fin haut de page */
+.recherche{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*  barre de recherche */
+.recherche i{
+    background-color: #f2f2f2;
+    padding: 1em;
+    border-radius: 15px 0px 0px 15px;
+    width: 3em;
+    height: 3em;
+    color: #0065FC;
+}
+
+
+.recherche  input{
+    font-weight: 700;
+    text-align: center;
+    width: 332px;
+    max-width: 100%;
+    height: 49px;
+    max-height: 100%;
+    border-radius: 15px;
+    padding: 1em;
+}
+::placeholder {
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-style: normal;
+}
+
+.bouton-rechercher {
+
+    background-color:  #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid;
+    color: #FFFFFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    padding: 10px 10px 10px 10px;
+    }
+    
+    /* fin barre de recherche */
+
+/*  debut filtre */
+    .filtres-barre {
+        display: flex;
+        font-weight: 700;
+        
+
+    }
+    .filtres-box {
+        
+        justify-content: center;
+        margin-left: 2em;
+        width: 226px;
+        max-width: 100%;
+        height: 50px;
+        max-height: 100%;
+        padding: 10px;
+        border: 2px solid #d9d9d9;
+        border-radius: 25px;
+        margin: 0;
+        box-sizing: border-box;
+    
+    
+    
+    }
+
+.filtres-box span + span {
+
+padding: 2%;
+font-size: 18px;
+
+}
+
+.filtres-box i {
+
+    color: #0065FC;
+ }
+ .filtres-box:hover {
+    background: #DEEBFF;
+ }
+
+ .cercle-i i {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #D9D9D9;
+    color: #0065FC;
+   
+    
+ }
+ /*  fin filtre */
+ 
+ /*  debut hebergement de marseille */
+ .boite {
+    width: 66%;
+    height: 626px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+   flex-direction: column;
+    margin: 30px 20px 50px 0px;
+    padding: 20px 20px; 
+
+ }
+ .hebergement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+ }
+ .h2 sous-titre {
+    
+    margin: 30px 0px 0px 52px;
+    font-size: 22px;
+    font-weight: bold;
+}
+   
+
+ 
+
+ .box-hebergement{
+
+   
+    width: 246px;
+    max-width: 100%;
+    height: 199px;
+    max-height: 100%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+    background-color: #FFFFFF;
+    
+    
+    
+
+
+ }
+
+ .box-hebergement2{
+    
+        width: 246px;
+        max-width: 100%;
+    height: 199px;
+    max-height: 100%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+border-radius: 5px; 
+    background-color: #FFFFFF;
+
+ }
+
+.image-hebergement {
+
+    border-radius: 20px 20px 0px 0px;
+   width: 246px;
+   height: 124px;
+    border: 5px; color: #FFFFFF;
+
+}
+
+/*  fin hebergement de marseille */
+    
+
+
+aside h2 {
+    font-weight: 700;
+font-size: 22px;
+line-height: 26px;
+}
+
+aside i {
+    color: #0065FC;
+    width: 18px;
+    height: 16px;
+}
+
+aside {
+
+    width: 420px;
+    max-width: 100%;
+    height: 625px;
+    max-height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+
+   
+    
+   
+}
+
+
+.box-pop {
+width: 343px;
+max-width: 100%;
+height: 144px;
+max-height: 100%;
+margin: 30px 5px 50px 8px;
+border-radius: 20px;
+background-color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.image-populaire {
+
+    width: 125px;
+    max-width: 100%;
+    height: 135px;
+    max-height: 100%;
+    border-radius: 20px 0px 0px 20px;   
+}
+
+.titre-populaire {
+
+    font-size: 16px;
+	font-weight: bold;
+    line-height: 19px;
+
+
+}
+
+
+.prix-populaire {
+
+    font-size: 14px;
+	font-weight: normal;
+    line-height: 16px;
+
+
+}
+
+.hebergement + .aside {
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.Activites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.activites-marseille {
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.bloc-img {
+
+    
+}
