@@ -320,14 +320,6 @@ justify-content: space-around;
 
 }
 
-.hebergement + .aside {
-
-    display: flex;
-    flex-direction: row;
-    
-}
-
-
 .Activites {
     display: flex;
     flex-direction: column;
@@ -335,7 +327,7 @@ justify-content: space-around;
     
 }
 
-.activites-marseille {
+.activite-marseille {
  
     display: flex;
     flex-direction: row;
@@ -344,13 +336,27 @@ justify-content: space-around;
 }
 
 .bloc-img {
-    width: 246px;
+    width: 302px;
     max-width: 100%;
-    height: 199px;
+    height: 444px;
     max-height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 5px; 
+  border-radius: 20px;
     background-color: #FFFFFF;
+    margin: 49px 349px 61px 50px;
+    padding: 2px;
+    
+    
+}
+
+.image-activite {
+
+    width: 342px ;
+    max-width:100% ;
+    height: 389px ;
+    max-height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    
     
 }
