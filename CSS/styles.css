@@ -1,7 +1,7 @@
 /* https://stackoverflow.com/questions/13850955/how-to-align-a-link-icon-after-the-text-via-css  pour icone lier filtre*/ 
 
 *{
-    font-family: "Raleway"; sans-serif;
+    font-family: "Raleway"; 
     max-width: 1400px;
     box-sizing: border-box;
     margin: 0;
@@ -344,7 +344,7 @@ justify-content: space-around;
   transition: 0.3s;
   border-radius: 20px;
     background-color: #FFFFFF;
-    margin: 49px 349px 61px 50px;
+    margin: 49px 0px 61px 50px;
     padding: 2px;
     
     
@@ -370,7 +370,7 @@ justify-content: space-around;
     left: 48px ;
     top : 0px;
     background-color: #f2f2f2;
-    margin: 30px 20px 50px 50px;
+    margin: 30px 20px 50px px;
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
