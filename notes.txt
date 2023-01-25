@@ -1,0 +1,1 @@
+-barres filtres ne semble pas responsive, je dois surement faire un box sizing et mettre un width pour eviter la deformation lors du resize
