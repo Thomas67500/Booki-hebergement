@@ -321,7 +321,7 @@ h2.sous-titre {
 }
 
 
-
+.boite-cliquable { width: 100%; height: 100%; display: block;}
 
 .fa-solid {
     color: #0065FC;
@@ -524,7 +524,7 @@ aside {
         height: 40em;
     }
 
- .box-hebergement {}
+ 
 
 
     .info-hebergement {height: 5em;}
@@ -564,24 +564,26 @@ aside {
 
     .image-populaire {
 
-        width: 88%;
+        width: 7em;
         object-fit: cover;
 
     }
 
+    .img-pop { margin-right: initial;}
+
     .texte-pop {
 
         position: relative;
-        top: -20px;
-        left: -30px;
+        top: initial;
+        left: initial;
     }
     
 
     .i-populaire {
 
     position: relative;
-    bottom: -10px;
-    left: -30px;
+    bottom: initial;
+    left: initial;
     }
 
     
