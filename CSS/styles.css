@@ -524,7 +524,7 @@ padding-left: 2em;
 }
 
 
-.conteneur { width: 100%;}
+
 
 
 .menu-nav { width: 40%; }
@@ -648,17 +648,8 @@ padding-left: 2em;
 
     }
     
-    .boite-footer{
-        
+
     
-    
-    }
-    
-    .menu-footer {
-    
-    padding: 10px 100px;
-    
-    }
 
   .bloc-footer {
 
@@ -672,6 +663,13 @@ padding-left: 2em;
 
 
  @media all and (min-width:1px) and (max-width:767px) {
+
+
+.conteneur {
+
+    width: 100%;
+   
+}
 
 header {
     display: flex;
@@ -708,6 +706,16 @@ width: 100%;
    
 }
 
+.titre-et-texte {
+
+
+    padding-left: 0.5em;
+    font-size: 13px;
+}
+
+
+
+
 .bouton-rechercher  {
     display: none;
 }
@@ -733,6 +741,7 @@ width: 100%;
 display: flex;
 flex-direction: column;
 align-items: initial;
+width: 100%;
 }
 
 .filtres-titres {
@@ -744,12 +753,14 @@ align-items: initial;
 .economique-familial {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .economique-familial .boite-filtre {
 
 
     margin: 1em;
+    width: 50%;
 }
 
 
@@ -758,12 +769,14 @@ align-items: initial;
 
 display: flex;
 flex-direction: row;
+width: 100%;
 
 }
     
 .romantique-animal .boite-filtre{
 
 margin: 1em;
+width: 50%;
 
 
 }
@@ -779,6 +792,7 @@ margin: 1em;
 aside {
 
 width: 100%;
+border-radius: initial;
 
 }
 
