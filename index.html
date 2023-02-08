@@ -19,7 +19,7 @@
 
         <header>
 
-            <img src="images/logo/Booki-mini.png" alt="logo du site" />
+            <img src= "images/logo/Booki-mini.png" alt= "logo du site">
 
             <!--Menu en haut à droite-->
             <nav class="menu-nav">
@@ -49,7 +49,7 @@
 
                 <!--Champs de Recherche-->
                 <div class="recherche">
-                    <form method="post" action="">
+                    <form method="post">  <!--enlever action ?-->
                          <span class="position-icone">  <span class="icone-position"> <i class="fa-solid fa-location-dot"></i> </span> </span>
                         <input type="text" name="ville" placeholder="Marseille,France">
                         <span class="bouton-rechercher"> Rechercher  </span>  <span class="icone-loupe"> <i class="fa-solid fa-magnifying-glass"></i> </span>
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="romantique-animal">
-                    <span class="boite-filtre">  <i class="fa-solid fa-heart"></i> Romantique</span> </span>
+                    <span class="boite-filtre">  <i class="fa-solid fa-heart"></i> Romantique</span> 
                     <span class="boite-filtre"> <i class="fa-solid fa-dog"></i> Animaux autorisés</span>
                 </div>
                     
@@ -90,7 +90,9 @@
                             
                             <article class="box-hebergement">
                                 <a href="#" class="boite-cliquable">
-                                    <img src="images/images utilisés/la canebière.jpg" class="image-hebergement" alt="Auberge de la cannebière">
+                                     <div class="image-boite">
+                                    <img src="images/hebergements/4_small/canebiere.jpg" class="image-hebergement" alt="Auberge de la cannebière">
+                                </div>
                                     <div class="info-hebergement">
                                         <h3 class="nom-hebergement"> Auberge de la canebière</h3>
                                         <p class="prix-hebergement">Nuit à partir de <strong> 25€ </strong> </p>
@@ -102,7 +104,9 @@
 
                             <article class="box-hebergement">
                                 <a href="#" class="boite-cliquable">
-                                    <img src="images/images utilisés/hôtel du port.jpg" class="image-hebergement" alt="Hôtel du port">
+                                    <div class="image-boite">
+                                    <img src="images/hebergements/4_small/port.jpg" class="image-hebergement" alt="Hôtel du port">
+                                </div>
                                     <div class="info-hebergement">
                                     <h3 class="nom-hebergement">Hôtel du port</h3>
                                     <p class="prix-hebergement"> Nuit à partir de <strong>52€</strong></p>
@@ -113,7 +117,9 @@
 
                                 <article class="box-hebergement">
                                 <a href="#" class="boite-cliquable">
-                                    <img src="images/images utilisés/mouettes.jpg" class="image-hebergement" alt="Hôtel les mouettes">
+                                    <div class="image-boite">
+                                    <img src="images/hebergements/4_small/mouettes.jpg" class="image-hebergement" alt="Hôtel les mouettes">
+                                </div>
                                     <div class="info-hebergement">
                                     <h3 class="nom-hebergement">Hôtel Les mouettes</h3>
                                     <p class="prix-hebergement">Nuit à partir de <strong>76€</strong> </p>
@@ -130,7 +136,9 @@
                         <div class="hebergement">
                             <article class="box-hebergement2">
                                 <a href="#" class="boite-cliquable">
-                                    <img src="images/images utilisés/mer.jpg" class="image-hebergement" alt="Hôtel de la mer">
+                                    <div class="image-boite">
+                                    <img src="images/hebergements/4_small/mer.jpg" class="image-hebergement" alt="Hôtel de la mer">
+                                </div>
                                     <div class="info-hebergement">
                                     <h3 class="nom-hebergement">Hôtel de la mer</h3>
                                     <p class="prix-hebergement">Nuit à partir de <strong>46€</strong></p>
@@ -141,7 +149,9 @@
 
                             <article class="box-hebergement2">
                                 <a href="#" class="boite-cliquable">
-                                    <img src="images/images utilisés/panier.jpg" class="image-hebergement" alt="Auberge Le Panier">
+                                    <div class="image-boite">
+                                    <img src="images/hebergements/4_small/panier.jpg" class="image-hebergement" alt="Auberge Le Panier">
+                                </div>
                                     <div class="info-hebergement">
                                     <h3 class="nom-hebergement">Auberge Le Panier</h3>
                                     <p class="prix-hebergement">Nuit à partir de <strong>23€</strong></p>
@@ -151,8 +161,10 @@
                             </article>
 
                             <article class="box-hebergement2">
-                                <a href="#"class="boite-cliquable">
-                                    <img src="images/images utilisés/amina.jpg" class="image-hebergement" alt="Hôtel chez Amina">
+                                <a href="#" class="boite-cliquable">
+                                    <div class="image-boite">
+                                    <img src="images/hebergements/4_small/amina.jpg" class="image-hebergement" alt="Hôtel chez Amina">
+                                </div>
                                         <div class="info-hebergement">
                                         <h3 class="nom-hebergement">Hôtel Chez Amina</h3>
                                         <p class="prix-hebergement">Nuit à partir de <strong>96€</strong></p>
@@ -185,7 +197,7 @@
                             <a href="#" class="box-pop">
                                 
                                 <div class="img-pop">
-                                    <img src="images/images utilisés/soleilmatin.jpg" class="image-populaire" alt="Hôtel le soleil du matin">
+                                    <img src="images/hebergements/4_small/soleil.jpg" class="image-populaire" alt="Hôtel le soleil du matin">
                                 </div>
 
                                 <div class="info-pop">
@@ -209,7 +221,7 @@
                             <a href="#" class="box-pop">
 
                                 <div class="img-pop">
-                                <img src="images/images utilisés/hôtes.jpg" class="image-populaire" alt=" Chambres d'hôtes au coeur de l'eau">
+                                <img src="images/hebergements/4_small/coeur-eau.jpg" class="image-populaire" alt=" Chambres d'hôtes au coeur de l'eau">
                             </div>
 
                                 <div class="info-pop">
@@ -234,7 +246,7 @@
                             <a href="#" class="box-pop">
 
                                 <div class="img-pop">
-                                <img src="images/images utilisés/bleublanc.jpg " class="image-populaire " alt="Hôtel Bleu et Blanc">
+                                <img src="images/hebergements/4_small/bleu-et-blanc.jpg " class="image-populaire " alt="Hôtel Bleu et Blanc">
                             </div>
 
                                 <div class="info-pop">
@@ -275,31 +287,40 @@
 
 
                         <article class="bloc-img">
+                
                         <a href="# " class="boite-cliquable">
-                            <img src="images/images utilisés/activité/vieux.jpg " class="image-activite " alt="Vieux-Port ">
-                            <div class="lieu-activite "> Vieux-Port</div>
+                            <div class="image-activite" >
+                               <img src="images/activites/4_small/vieux-port.jpg " class="image-activite-test" alt="Vieux-Port "> 
+                            </div>
+                            <h3 class="lieu-activite "> Vieux-Port</h3>
                         </a>
                     </article>
 
 
                         <article class="bloc-img" >
                         <a href="# " class="boite-cliquable">
-                            <img src="images/images utilisés/activité/fort.jpg " class="image-activite " alt=" Fort de Pomègues">
-                            <span class="lieu-activite ">Fort de Pomègues</span>
+                            <div class="image-activite">
+                               <img src="images/activites/4_small/pomegues.jpg " class="image-activite-test " alt=" Fort de Pomègues">
+                            </div>
+                            <h3 class="lieu-activite ">Fort de Pomègues</h3>
                         </a>
                     </article>
 
                         <article class="bloc-img">
                         <a href="# " class="boite-cliquable">
-                            <img src="images/images utilisés/activité/parc.jpg " class="image-activite " alt=" Parc nationnal des Calanques">
-                            <span class="lieu-activite ">Parc nationnal des Calanques</span>
+                            <div class="image-activite">
+                               <img src="images/activites/4_small/parc.jpg" class="image-activite-test " alt=" Parc nationnal des Calanques">
+                            </div>
+                            <h3 class="lieu-activite ">Parc nationnal des Calanques</h3>
                         </a>
                     </article>
 
                        <article class="bloc-img">
                         <a href="# " class="boite-cliquable">
-                            <img src="images/images utilisés/activité/notre-dame.jpg " class="image-activite " alt="Notre-Dame-de-la-Garde">
-                            <span class="lieu-activite "> Notre-Dame-de-la-Garde</span>
+                            <div class="image-activite">
+                                <img src="images/activites/4_small/dame.jpg" class="image-activite-test " alt="Notre-Dame-de-la-Garde">
+                             </div>
+                            <h3 class="lieu-activite "> Notre-Dame-de-la-Garde</h3>
                         </a>
                     </article>
 
@@ -312,7 +333,7 @@
 
         <footer class="boite-footer">
 
-            <div class="boite-footer ">
+            <div class="bloc-footer ">
                 <nav class="menu-footer ">
                     <ul> 
                         <li>
@@ -339,7 +360,7 @@
                         <li> <a href=" "> Nous contacter </a> </li>
                     </ul>
                 </nav>
-            
+            </div>
         </footer>
 
     </div>
