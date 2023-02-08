@@ -18,6 +18,7 @@
 a {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 
@@ -111,12 +112,11 @@ form {
     background-color: #f2f2f2;
     padding: 1em;
     border-radius: 15px 0px 0px 15px;
-    /*height: 3em;*/
     color: black;
 }
 
 .recherche input {
-    padding: 0.7em;
+    padding: 1.2em;
     margin-left: -5px;
     border: 0;
 }
@@ -133,7 +133,7 @@ form {
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    padding: 13px;
+    padding: 17px;
     margin-left: -5px;
     
 
@@ -195,7 +195,8 @@ form {
     display: inline-block;
     border-radius: 60px;
     box-shadow: 0 0 2px #888;
-    padding: 0.5em 0.6em;
+    padding: 0.4em 0.7em;
+    font-size: 12px;
     color: #0065FC;
 }
 
@@ -219,6 +220,7 @@ form {
 .bloc-hebergement {
 
     width :100%;
+    
 }
 
 
@@ -226,9 +228,8 @@ form {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-   /* border: 5px solid yellow; */
-    box-sizing: border-box;
     width: 100%;
+    height: 42em;
     
 }
 
@@ -240,9 +241,14 @@ form {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-   /* border: 5px solid red;*/
+  
     
 }
+
+.image-boite{ 
+    width: 100%; 
+    height: 9em;}
+
 
 .hebergement {
     display: flex;
@@ -255,7 +261,6 @@ h2.sous-titre {
     font-size: 22px;
     font-weight: bold;
     margin-top: 1em;
-    margin-bottom: -1.5em;
     position: relative;
     left: 1em;
 }
@@ -267,9 +272,6 @@ h2.sous-titre {
     
 }
 
-.prix-hebergement {
-
-}
 
 .i-hebergement{
     display: flex;
@@ -281,19 +283,17 @@ h2.sous-titre {
 
 .box-hebergement { 
     width: 50%;
-    height: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 20px;
     margin: 1em;
     background-color: #FFFFFF;
-  /*  border: 5px solid pink; */
+  
     
 }
 
 .box-hebergement2 {
     width: 50%;
-    height: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 20px;
@@ -306,22 +306,25 @@ h2.sous-titre {
 .image-hebergement {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 60%;
+    height: 100%;
     border: 5px;
     color: #FFFFFF;
     padding: 0.5em;
 }
 
 .info-hebergement {
-    box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 1.5em;
     padding-left: 1em;
 }
 
 
-.boite-cliquable { width: 100%; height: 100%; display: block;}
+.boite-cliquable { 
+    width: 100%;
+    height: 100%; 
+    display: block;
+}
 
 .fa-solid {
     color: #0065FC;
@@ -369,7 +372,6 @@ aside {
     height: 42em;
     background-color: #f2f2f2;
     border-radius: 20px;
-  /*  border: 5px solid blue; */
     display: flex;
     flex-direction: column;
     
@@ -385,7 +387,7 @@ aside {
     display: flex;
     flex-direction: row;
     
- /*   border: 5px solid green; */
+
     
 }
 
@@ -398,10 +400,11 @@ aside {
 }
 
 .image-populaire {
-    height: 10em;
+    width: 100%;
+    height: 100%;
     border-radius: 20px 0px 0px 20px;
     padding: 0.5em;
- /*   border: 5px solid orange; */
+    object-fit: cover;
     
 }
 
@@ -409,6 +412,8 @@ aside {
     display: flex;
     flex-direction: row;
     margin-right: 2em;
+    height: 10em;
+    width: 40%;
 }
 
 .titre-populaire {
@@ -430,7 +435,6 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  /*  border: 5px solid red; */
     margin: 1em;
 }
 
@@ -450,7 +454,6 @@ aside {
 
 .bloc-img {
     width: 100%;
-    height: 31em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 20px;
@@ -461,23 +464,37 @@ aside {
 
 .image-activite {
     width: 100%;
-    height: 27em;
+    height: 26em;
     border-radius: 10px 10px 0px 0px;
+}
+
+.image-activite-test { 
+    width: 100%;
+    height: 100%;
+    border-radius:10px 10px 0px 0px; 
+    object-fit: cover;
+
+
 }
 
 .lieu-activite {
     font-weight: bold;
+    padding: 0.6em;
 }
 
 .boite-footer {
     width: 100%;
     background-color: #f2f2f2;
-    margin: 30px 20px 50px px;
     padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
+    
 }
 
+
+.bloc-footer {
+width: 80%;
+padding-left: 2em;
+
+}
 .menu-footer {
     display: flex;
     flex-direction: row;
@@ -487,7 +504,6 @@ aside {
 .menu-footer ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-decoration: none;
     list-style: none;
     margin: 10px 0;
@@ -497,7 +513,19 @@ aside {
     margin: 5px;
 }
 
+
+
+
 @media all and (min-width: 768px) and (max-width:991px) {
+
+* {
+
+    font-size: 15px;
+}
+
+
+.conteneur { width: 100%;}
+
 
 .menu-nav { width: 40%; }
 
@@ -518,6 +546,11 @@ aside {
         height: 100%;
     }
 
+ h2.sous-titre {
+    font-size: 17px;
+ }
+
+
     .boite {
 
         width: 100%;
@@ -526,8 +559,10 @@ aside {
 
  
 
-
-    .info-hebergement {height: 5em;}
+.detail {
+    top: -1em;
+}
+    
 
 
  
@@ -586,19 +621,35 @@ aside {
     left: initial;
     }
 
-    
+    .titre-activite {
+
+ margin-bottom: -2em;
+
+    }
+
+
     .bloc-img{
-    
-        height: 200px;
+    margin: 49px 13px 31px 20px;
+        
     }
     
     .image-activite{
-    
-        height: 150px;
+
+    height: 10em;
+        
+    }
+
+    .lieu-activite {
+
+ padding-bottom: 0.6em;
+ padding-top: 0.7em;
+ margin-left: 0.3em;
+ font-size: 15px;
+
     }
     
     .boite-footer{
-        width: 95%;
+        
     
     
     }
@@ -608,6 +659,13 @@ aside {
     padding: 10px 100px;
     
     }
+
+  .bloc-footer {
+
+    width: 90%;
+  }
+
+
             }
     
 
@@ -626,12 +684,7 @@ header img {
     padding: 1em;
 }
 
-/*
-header ul {
-    border-bottom: solid 2px #f2f2f2;
-    padding-bottom: 1em;
-}
-*/
+
 
 .menu-nav {
 
@@ -756,8 +809,8 @@ h2.sous-titre { margin-bottom: initial;}
     width: 100%;
 }
 
-.image-hebergement { height: 10em;}
-.info-hebergement { height: 5em;}
+.image-hebergement { height: 10em; object-fit: cover;}
+.info-hebergement {  margin-top: 1em;}
 .detail { display: none;}
 
 
@@ -787,6 +840,8 @@ h2.titre-activite { margin-bottom: -1.5em; padding: initial;}
 
     flex-direction: column;
 }
+
+
 
 
 }
