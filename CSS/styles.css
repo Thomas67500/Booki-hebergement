@@ -687,7 +687,7 @@ padding-left: 2em;
 
 
 
-    * {font-size: 12px;}
+    
 
 .conteneur {
 
@@ -735,15 +735,18 @@ width: 100%;
 
     padding-left: 0.5em;
     font-size: 13px;
+    width: 90%;
 }
 
-.titre-et-texte h1 
+.titre-et-texte h1 {font-size: 21px;}
 
 .en-tete {width: 95%;}
 
 .bouton-rechercher  {
     display: none;
 }
+
+.recherche {padding: 0 0 1em;}
 
 .icone-loupe i {
     display: inline;
@@ -777,6 +780,7 @@ width: 100%;
 
 
 .boite-filtre i { font-size: 15px;}
+.texte-filtre {font-size: 12px;}
 
 .economique-familial {
     display: flex;
