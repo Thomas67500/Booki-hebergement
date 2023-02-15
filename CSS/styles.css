@@ -748,8 +748,20 @@ width: 100%;
     left: 10px;
 }
 
-.boite-filtre { display : flex; align-items: center; margin: 15px 11px; padding: 17px 15px;}
-.boite-filtre i { font-size: 18px;}
+.boite-filtre { 
+
+    display : flex; 
+    align-items: center; 
+    margin: 15px 11px; 
+    padding: 15px 6px 15px 12px;
+}
+
+
+.boite-filtre i { 
+    font-size: 18px;
+    margin-left: 5px;
+}
+
 .texte-filtre {font-size: 12px;}
 
 .economique-familial {
@@ -758,7 +770,7 @@ width: 100%;
     width: 100%;
 }
 
-.economique-familial .boite-filtre {width: 50%;}
+.economique-familial .boite-filtre {width: 50%;} 
 
 
 
@@ -770,7 +782,8 @@ width: 100%;
 
 }
     
-.romantique-animal .boite-filtre{width: 50%;}
+.romantique-animal .boite-filtre{width: 50%;} 
+
 
 .cercle-i { display: flex; align-items: flex-start;}
 .cercle-i i { margin: 0 1em 0;}
