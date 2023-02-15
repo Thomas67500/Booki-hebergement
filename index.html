@@ -5,9 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <script src="https://kit.fontawesome.com/db99a451b3.js" crossorigin="anonymous"></script>
     <title>Booki,hébergement de vacances de rêves</title>
@@ -48,13 +50,14 @@
                 </div>
 
                 <!--Champs de Recherche-->
+                <form method="post"> 
                 <div class="recherche">
-                    <form method="post">  <!--enlever action ?-->
-                         <span class="position-icone">  <span class="icone-position"> <i class="fa-solid fa-location-dot"></i> </span> </span>
+                         <div class="localisation">   <i class="fa-solid fa-location-dot"></i>  </div>
                         <input type="text" name="ville" placeholder="Marseille,France">
                         <span class="bouton-rechercher"> Rechercher  </span>  <span class="icone-loupe"> <i class="fa-solid fa-magnifying-glass"></i> </span>
-                    </form>
+                    
                 </div>
+            </form>
                 <!-- Fin du champs de recherche-->
 
 
@@ -67,7 +70,7 @@
                        <div class="boite-filtre">
                            <i class="fa-solid fa-money-bill-wave"></i>  <span class="texte-filtre"> Economique </span>
                         </div>
-                    <div class="boite-filtre"> 
+                    <div class="boite-filtre familial"> 
                         <i class="fa-solid fa-person"></i>  <span class="texte-filtre">Familial</span>
                     </div>   
                 </div>
@@ -348,27 +351,27 @@
                 <nav class="menu-footer ">
                     <ul> 
                         <li>
-                            <a href="#"> <b>A propos</b> </a>
+                            <a href="#" class="titre-footer"> <b>À propos</b> </a>
                         </li>
-                        <li> <a href=" ">Fonction du site</a></li>
-                        <li><a href=" ">Conditions générales</a></li>
-                        <li> <a href=" "> Données et confidentialité</a></li>
+                        <li> <a href="#" class="contenu-footer">Fonction du site</a></li>
+                        <li><a href=" #" class="contenu-footer">Conditions générales</a></li>
+                        <li> <a href=" #" class="contenu-footer"> Données et confidentialité</a></li>
                     </ul>
 
                     <ul>
                         <li>
-                            <a href=" "> <b>Nos hébergements</b></a>
+                            <a href=" #" class="titre-footer"> <b>Nos hébergements</b></a>
                         </li>
-                        <li> <a href=" ">Charte qualité</a></li>
-                        <li> <a href=" "> Porposer votre hôtel</a></li>
+                        <li> <a href="# " class="contenu-footer">Charte qualité</a></li>
+                        <li> <a href=" #" class="contenu-footer"> Porposer votre hôtel</a></li>
                     </ul>
 
                     <ul>
                         <li>
-                            <a href=" "> <b>Assistance</b></a>
+                            <a href="# " class="titre-footer"> <b>Assistance</b></a>
                         </li>
-                        <li> <a href=" "> Centre d'aide </a> </li>
-                        <li> <a href=" "> Nous contacter </a> </li>
+                        <li> <a href="# " class="contenu-footer"> Centre d'aide </a> </li>
+                        <li> <a href="# " class="contenu-footer"> Nous contacter </a> </li>
                     </ul>
                 </nav>
             </div>
