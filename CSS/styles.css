@@ -37,6 +37,7 @@ a:visited {
 header img {
     object-fit: contain;
     padding-top: 2em;
+    padding-left: 1em;
 }
 
 header {
@@ -89,6 +90,7 @@ header ul {
 
 
 /*   fin haut de page */
+ .titre-et-texte h1 { padding-bottom: 0.2em;}
 
 .mb {
     margin-bottom: 1em;
@@ -99,28 +101,31 @@ header ul {
 
 .recherche {
     display: flex;
-    justify-content: flex-start;
-    /*border: 5px solid red;*/
-    padding: 1em;
+    flex-direction: row;
+    border-radius: 16px;
+        
 }
 
-form {
-    border: 1px black solid;
-    border-radius: 15px;
-    border-color: #f2f2f2;
-}
+.form {}
 
-.icone-position i {
+.localisation i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
     background-color: #f2f2f2;
-    padding: 1.2em;
+    padding: 1em;
     border-radius: 15px 0px 0px 15px;
     color: black;
+
 }
 
 .recherche input {
-    padding: 1.2em;
-    margin-left: -5px;
-    border: hidden;
+    width: 13em;
+    border : 1px solid #f2f2f2;
+    padding-left: 1em;
+    font-size: 18px;
 }
 
 ::placeholder {
@@ -132,6 +137,9 @@ form {
 }
 
 .bouton-rechercher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
     border: 1px;
@@ -139,7 +147,7 @@ form {
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    padding: 17px;
+    width: 8em;
     margin-left: -5px;
     
 
@@ -158,8 +166,7 @@ form {
     display: flex;
     font-weight: 700;
     flex-direction: row;
-    /*justify-content: space-between; /*
-   /* border: 5px solid green;*/
+   margin-top:2em;
     align-items: center;
 }
 
@@ -167,13 +174,13 @@ form {
     display: flex;
     flex-direction: row;
     margin-left: 2em;
-    padding: 10px 10px;
+    padding: 10px 25px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;   
 }
 
-.boite-filtre i { position: relative; left: -5px; margin-left: 1em;}
-.texte-filtre {margin-right: 1em;}
+.boite-filtre i { position: relative; left: -5px;}
+
 
 .boite-filtre:hover {
     background-color: #DEEBFF;
@@ -274,12 +281,17 @@ h2.sous-titre {
 }
 
 .nom-hebergement {
-    font-weight: bold;
+    font-size: 16px;
     display: flex;
     flex-direction: row;
+    padding-bottom: 0.2em;
     
 }
 
+.prix-hebergement {
+    font-size: 14px;
+    
+}
 
 .i-hebergement{
     display: flex;
@@ -365,13 +377,17 @@ h2.sous-titre {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 1em;
-    margin: 1em;
+    margin: 2em 1em 0em;
     align-items: center;
 }
 
 .populaire-titre-icone i {
     padding-top: 0.5em;
     font-size: 20px;
+}
+
+.populaire-titre-icone h2{ 
+    font-size: 22px;
 }
 
 aside i {
@@ -425,16 +441,16 @@ aside {
 .img-pop {
     display: flex;
     flex-direction: row;
-    margin-right: 2em;
     height: 10em;
     width: 40%;
 }
 
 .titre-populaire {
-    font-size: 19px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 19px;
-    padding: 0;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
     
 }
 
@@ -528,6 +544,8 @@ padding-left: 2em;
     margin: 5px;
 }
 
+.titre-footer { font-size: 18px; font-weight: 700;}
+.contenu-footer {font-size: 16px; font-weight: 400;}
 
 
 
@@ -538,8 +556,23 @@ padding-left: 2em;
     font-size: 13px;
 }
 
+ a {
+    font-size: 14px;
+ }
+
+
+.titre-et-texte h1 {
+    font-size: 19px;
+} 
+
+.titre-et-texte span{
+    font-size: 15px;
+    padding-bottom: 0.3em;
+}
+
 .menu-nav { width: 40%; }
 
+.recherche input{ font-size: 17px;}
 .bouton { margin-left: 1em;}
 
 
@@ -579,9 +612,9 @@ padding-left: 2em;
 
     aside {
         width: 100%;
-        height: 20em;
+        height: 21em;
         margin-top: 2em;
-        padding: 1em;
+        padding: 0 1em;
         
     }
 
@@ -594,8 +627,15 @@ padding-left: 2em;
         bottom: -1em;
         align-items: center;
     }
+
+
     .populaire-titre-icone h2{ font-size: 20px; padding-left: 1em;}
 
+
+    .populaire-titre-icone i {
+
+        padding-left: 2em;
+    }
     .bloc-carte {
 
         display: flex;
@@ -629,8 +669,13 @@ padding-left: 2em;
         
     }
     
-    .titre-populaire {font-size: 13px;}
-    .prix-populaire {font-size: 13px;}
+    .titre-populaire {
+        font-size: 13px;
+        padding-top: initial;
+        line-height: normal;
+    
+    }
+    .prix-populaire {font-size: 12px;}
     
 
     .i-populaire {
@@ -664,6 +709,8 @@ padding-left: 2em;
  padding-bottom: 0.6em;
  padding-top: 0.7em;
  margin-left: 0.3em;
+ position: relative;
+ bottom: -0.3em;
  
 
     }
@@ -682,7 +729,7 @@ padding-left: 2em;
 
 
 
- @media all and (min-width:1px) and (max-width:767px) {
+ @media all and (max-width:767px) {
 
 
 
@@ -730,15 +777,18 @@ width: 100%;
    
 }
 
+
 .titre-et-texte {
 
-
+    margin-left: 1em;
     padding-left: 0.5em;
+    padding-bottom: 1em;
     font-size: 13px;
     width: 90%;
 }
 
-.titre-et-texte h1 {font-size: 21px;}
+.titre-et-texte h1 {font-size: 21px; padding-bottom: 0.5em;}
+.titre-et-texte span {font-size: 16px;}
 
 .en-tete {width: 95%;}
 
@@ -746,10 +796,14 @@ width: 100%;
     display: none;
 }
 
-.recherche {padding: 0 0 1em;}
+
+.recherche {margin-left:1em;}
+.recherche input {width: 15em; }
 
 .icone-loupe i {
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
     border: 1px;
@@ -757,7 +811,8 @@ width: 100%;
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    padding: 19px;
+    width: 3em;
+    height: 3em;
     margin-left: -5px;
 
 }
@@ -778,8 +833,8 @@ width: 100%;
     left: 10px;
 }
 
-
-.boite-filtre i { font-size: 15px;}
+.boite-filtre { display : flex; align-items: center; margin: 15px 11px; padding: 17px 15px;}
+.boite-filtre i { font-size: 18px;}
 .texte-filtre {font-size: 12px;}
 
 .economique-familial {
@@ -791,7 +846,7 @@ width: 100%;
 .economique-familial .boite-filtre {
 
 
-    margin: 1em;
+    
     width: 50%;
 }
 
@@ -806,8 +861,6 @@ width: 100%;
 }
     
 .romantique-animal .boite-filtre{
-
-margin: 1em;
 width: 50%;
 
 
@@ -833,7 +886,7 @@ border-radius: initial;
 
 }
 
-.titre {font-size: 20px;}
+.titre {font-size: 22px;}
 
 .hebergement {
     display: flex;
@@ -843,9 +896,9 @@ border-radius: initial;
     
 }
 
+.nom-hebergement {font-size: 16px;}
+
 .bloc-hebergement { margin-top: 2em;}
-
-
 
 .boite {
 
@@ -889,7 +942,7 @@ h2.titre-activite { margin-bottom: -1.5em; padding: initial;width: 30%;font-size
 
 .bloc-img {
     width: 100%;
-    height: 14em;
+    height: 13.5em;
     margin: 49px 0px 0px 0px;
     margin-left: 2em;
 }
@@ -899,6 +952,8 @@ h2.titre-activite { margin-bottom: -1.5em; padding: initial;width: 30%;font-size
 .image-activite{ 
     height: 10em;
 }
+
+.lieu-activite { font-size: 16px;}
 
 .menu-footer {
 
